@@ -32,18 +32,10 @@ A simple **MERN stack application** that allows users to manage plants.
 │   └── src
 │       ├── app.js
 │       ├── config
-│       │   └── db.js
 │       ├── controllers
-│       │   ├── authController.js
-│       │   └── plantController.js
 │       ├── middleware
-│       │   └── auth.js
 │       ├── models
-│       │   ├── plant.js
-│       │   └── user.js
 │       ├── routes
-│       │   ├── authRoutes.js
-│       │   └── plantRoutes.js
 │       └── server.js
 ├── frontend
 │   ├── eslint.config.js
@@ -51,28 +43,13 @@ A simple **MERN stack application** that allows users to manage plants.
 │   ├── package.json
 │   ├── src
 │   │   ├── api
-│   │   │   └── axios.js
 │   │   ├── App.jsx
 │   │   ├── assets
-│   │   │   └── react.svg
 │   │   ├── components
-│   │   │   ├── CategoryFilter.jsx
-│   │   │   ├── Error.jsx
-│   │   │   ├── Loader.jsx
-│   │   │   ├── Navbar.jsx
-│   │   │   ├── PlantCard.jsx
-│   │   │   ├── ProtectedRoute.jsx
-│   │   │   └── SearchBar.jsx
 │   │   ├── index.css
 │   │   ├── main.jsx
 │   │   ├── pages
-│   │   │   ├── AddPlantForm.jsx
-│   │   │   ├── Login.jsx
-│   │   │   ├── PlantList.jsx
-│   │   │   ├── Profile.jsx
-│   │   │   └── Signup.jsx
 │   │   └── utils
-│   │       └── auth.js
 │   └── vite.config.js
 └── README.md
 
@@ -85,25 +62,30 @@ A simple **MERN stack application** that allows users to manage plants.
 ```bash
 git clone https://github.com/Lakshman76/urvann-plant-store.git
 cd urvann-plant-store
-
+```
 ### 2. Setup Backend
+```bash
 cd backend
 npm install
-
+```
 ### 3. Create a .env file inside backend/ with:
+```bash
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 FRONTEND_URL=http://localhost:5173
-
+```
 ### 4. Start the backend server
+```bash
 npm run dev
-
+```
 ### 5. Setup Frontend
+```bash
 cd ../frontend
 npm install
-
+```
 ### 6. Start the frontend server
+```bash
 npm run dev
 ```
 ## 🔑 Usage
